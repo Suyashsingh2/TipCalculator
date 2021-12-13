@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <header></header>
+    <div class="container">
+      <div class="wrapper">
+        <span>Bill Amount</span>
+        <input id="billamount" placeholder="$" type="number" / style="width:
+        64px;">
+      </div>
+      <div class="wrapper">
+        <span>Tip Amount</span>
+        <p id="tipamount">$0</p>
+      </div>
+      <hr />
+      <div class="wrapper">
+        <span>Total Amount</span>
+        <p id="totalamount">$0</p>
+      </div>
+      <div class="rangebar">
+        <div class="wrapper">
+          <span>No. of People</span>
+          <p id="ppl">0</p>
+        </div>
+        <div class="wrapper">
+          <input id="noofpeople" min="1" max="15" value="1" type="range" /
+          style="width: 100%; ">
+        </div>
+        <div class="wrapper">
+          <span>Tip%</span>
+          <p id="tip">0%</p>
+        </div>
+        <div class="wrapper">
+          <input id="tippercent" min="1" value="15" type="range" /style=" width:
+          100%; ">
+        </div>
+        <div class="resultbar">
+          <div class="wrapper">
+            <span>Tip per person</span>
+            <p id="tpprsn">$0</p>
+          </div>
+          <div class="wrapper">
+            <span>Total per person</span>
+            <p id="ttlprsn">$0</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
